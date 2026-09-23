@@ -20,21 +20,21 @@ ENTITLEMENT_SAV_FILE = WORKSPACE_DIR / "Jenkins_ENTITLEMENT_VALUES.sav"
 
 # JENKINS CONFIGURATION
 JENKINS_URL = "http://localhost:8080"
-JENKINS_USERNAME = "garvit01"
-JENKINS_API_TOKEN = "11c43fba72aa9d5c9b9c1d107e90af2448"
+JENKINS_USERNAME = "<jenkins_username>"
+JENKINS_API_TOKEN = "<jenkins_username>"
 ACCOUNT_JOB = "Accounts_Csv_generate_automation"
 ENTITLEMENT_JOB = "Entitlements_csv_auto_gen"
 
 jenkins_session = requests.Session()
 jenkins_session.auth = (JENKINS_USERNAME, JENKINS_API_TOKEN)
 
-SAVIYNT_URL = "https://northstar-partner.saviyntcloud.com"
+SAVIYNT_URL = "https:/<org-instance>.saviyntcloud.com"
 
-SAVIYNT_USERNAME = "garvit.bajaj"
+SAVIYNT_USERNAME = "<saviynt_username>"
 
 # Replace with your current Saviynt password
-SAVIYNT_PASSWORD = "GarviT@001"
-# SAVIYNT API ENDPOIN
+SAVIYNT_PASSWORD = "<saviynt_password>"
+# SAVIYNT API ENDPOINT
 
 # Correct endpoint confirmed from your Postman request
 SAVIYNT_LOGIN_ENDPOINT = "/ECM/api/login"
@@ -49,7 +49,7 @@ ACCOUNT_TRIGGER_PAYLOAD = {
     "jobgroup": "schema",
     "jobname": "SchemaAccountJob",
 }
-
+#these are my jobs i created before running the script you have to create yours
 ENTITLEMENT_TRIGGER_PAYLOAD = {
     "triggername": "jenkins_entitlement_import",
     "jobgroup": "schema",
