@@ -1,0 +1,10 @@
+SystemName=Jenkins
+FileNameStartswith=JenkinsAccounts.csv
+Entitlement_type=entitlement,
+FILEIMPORTDELIMETER=,
+ACCOUNTNAME,endpointname,entitlement,status,
+            IGNOREFIRSTLINE=TRUE
+
+DELETEACCOUNTENTITLEMENT=YES
+
+ACCOUNT_NOT_IN_FILE_ACTION=NO
